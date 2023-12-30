@@ -6,7 +6,7 @@ export const Music = () => {
 
   return (
     <>
-        <iframe src="youraudiofile.mp3"  allow="autoplay" id="audio" style={{display:'none'}}></iframe>
+        {/* <iframe src="youraudiofile.mp3"  allow="autoplay" id="audio" style={{display:'none'}}></iframe> */}
 
       <audio ref={audioRef} id="" controls autoPlay>
         <source src={music} />

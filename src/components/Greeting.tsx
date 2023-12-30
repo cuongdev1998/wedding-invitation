@@ -1,25 +1,15 @@
 import { useRef } from 'react';
 import { styled } from '@stitches/react';
-import useOnScreen from '../hooks/useOnScreen';
 import { ConfigsType } from '../configs';
 import Groom from '../resources/groom.png';
 import Bride from '../resources/bride.png';
-import { Col, Image, Row } from 'antd';
+import { Image } from 'antd';
 
-const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Layout = styled('div', {
   width: '100%',
   padding: '5%',
   height: 'fit-content',
-});
-
-const Title = styled('p', {
-  color: '#795548',
-  width: '100%',
-  fontSize: isPortrait ? '2.5em' : '3.5em',
-  margin: 0,
-  fontWeight: '500',
 });
 
 const Card = styled('div', {
@@ -38,7 +28,6 @@ type GreetingProps = {
 
 const Greeting = ({ config }: GreetingProps) => {
   const ref = useRef<HTMLSelectElement>(null);
-  // const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-125px');
 
   return (
     <div

@@ -1,6 +1,4 @@
 import { styled } from '@stitches/react';
-import Confetti from 'react-confetti';
-import { useWindowSize } from 'react-use';
 import { ConfigsType } from '../configs';
 import { HeartConfetti } from './HeartConfetti';
 
@@ -54,7 +52,6 @@ type TitleProps = {
 };
 
 const Title = ({ config }: TitleProps) => {
-  const { width, height } = useWindowSize();
 
   return (
     <>
