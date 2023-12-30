@@ -38,3 +38,17 @@ body,
   height: 200px;
   object-fit: cover;
 }
+
+.lucky-money {
+  /* opacity: 0; */
+  animation: animationMoney 2s;
+}
+
+@keyframes animationMoney {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

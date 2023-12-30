@@ -57,7 +57,7 @@ export const WhenWhere = () => {
 
       <Item>
         <h3>Lễ thành hôn</h3>
-        <p>14h30 ngày 26 tháng 12 năm 2023</p>
+        <p>14h30 ngày 07 tháng 01 năm 2024</p>
         <div>
           Tư gia nhà trai: Số 33, Ngõ Đo, Thôn Tư Can, Xã Châu Can, Huyện Phú Xuyên, Thành phố Hà
           Nội

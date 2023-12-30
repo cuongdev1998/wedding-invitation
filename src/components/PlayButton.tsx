@@ -33,7 +33,7 @@ export const PlayButton = () => {
           right: '1rem',
           width: '50px',
           height: '50px',
-          zIndex: 9999,
+          zIndex: 9,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
