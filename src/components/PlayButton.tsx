@@ -1,9 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import sound from  '../resources/sound-max.svg'
 import mute from '../resources/sound-min.svg';
-import {
-    SoundOutlined
-} from '@ant-design/icons'
 export const PlayButton = () => {
     const [isMute, setIsMute] = useState<boolean>(false)
   return (

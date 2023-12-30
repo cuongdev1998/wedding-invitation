@@ -1,9 +1,6 @@
-import { useRef } from 'react';
 import { styled } from '@stitches/react';
-import { Carousel, Col, Image, Row } from 'antd';
-import useOnScreen from '../hooks/useOnScreen';
+import { Carousel, Image } from 'antd';
 
-import { useWindowSize } from 'react-use';
 import { ConfigsType } from '../configs';
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
@@ -23,9 +20,6 @@ type GalleryProps = {
 };
 
 const Gallery = ({ config }: GalleryProps) => {
-  const { width } = useWindowSize();
-
-  const ref = useRef<HTMLSelectElement>(null);
 
   return (
     <section

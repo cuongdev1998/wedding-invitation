@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import music from '../resources/i-do.mp3';
 export const Music = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -10,7 +10,6 @@ export const Music = () => {
 
       <audio ref={audioRef} id="" controls autoPlay>
         <source src={music} />
-        {/* <iframe src={music} allow='autoplay'/> */}
       </audio>
     </>
   );

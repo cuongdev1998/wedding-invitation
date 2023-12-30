@@ -40,13 +40,6 @@ const Sticker = styled('div', {
 
 const Title = styled('h2', { fontSize: isPortrait ? '1.5em' : '3em', color: '#FFF' });
 
-const SubTitle = styled('div', {
-  margin: '15px 0',
-  fontSize: isPortrait ? '0.8em' : '2em',
-  fontWeight: 600,
-  color: '#EEEEEE',
-});
-
 type HongBaoProps = {
   title: string;
   subTitle: string;
