@@ -5,12 +5,6 @@ import Bride from '../resources/bride.png';
 import { Image } from 'antd';
 
 
-const Layout = styled('div', {
-  width: '100%',
-  padding: '5%',
-  height: 'fit-content',
-});
-
 const Card = styled('div', {
   color: '#795548',
   display: 'flex',
