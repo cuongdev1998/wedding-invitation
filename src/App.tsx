@@ -4,7 +4,6 @@ import TitleLayout from './components//Title';
 import Location from './components//Location';
 import CongratulatoryMoney from './components//CongratulatoryMoney';
 import Configs from './configs';
-import Share from './components/Share';
 import { Layout } from 'antd';
 import { Music } from './components/Music';
 import { WhenWhere } from './components/WhenWhere';

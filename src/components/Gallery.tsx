@@ -26,7 +26,6 @@ const Gallery = ({ config }: GalleryProps) => {
   const { width } = useWindowSize();
 
   const ref = useRef<HTMLSelectElement>(null);
-  // const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-125px');
 
   return (
     <section
