@@ -22,7 +22,6 @@ type CongratulatoryMoneyProps = {
 
 const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
   const [groomVisible, setGroomVisible] = useState<boolean>(false);
-  const [brideVisible, setBrideVisible] = useState<boolean>(false);
 
   return (
     <Section>
