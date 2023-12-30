@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { styled } from '@stitches/react';
 import { ConfigsType } from '../configs';
 import Groom from '../resources/groom.png';
@@ -27,7 +26,6 @@ type GreetingProps = {
 };
 
 const Greeting = ({ config }: GreetingProps) => {
-  const ref = useRef<HTMLSelectElement>(null);
 
   return (
     <div

@@ -1,4 +1,3 @@
-import TitleImage from './resources/Title.png';
 import LocationMapImage from './resources/LocationMap.png';
 import GalleryPhoto1 from './resources/MP_CC_1.jpg';
 import GalleryPhoto2 from './resources/MP_CC_2.jpg';

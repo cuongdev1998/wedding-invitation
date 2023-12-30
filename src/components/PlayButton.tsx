@@ -5,7 +5,7 @@ export const PlayButton = () => {
     const [isMute] = useState<boolean>(false)
   return (
     <div style={{ position: 'fixed', bottom: '3rem', right: '3rem', width: '20px', height: '20px'}}>
-       <img src={ isMute ? sound : mute} />
+       <img src={ isMute ? sound : mute} alt=''/>
     </div>
   )
 }
