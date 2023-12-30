@@ -4,7 +4,6 @@ import TitleLayout from './components//Title';
 import CongratulatoryMoney from './components//CongratulatoryMoney';
 import Configs from './configs';
 import { Layout } from 'antd';
-import { Music } from './components/Music';
 import { WhenWhere } from './components/WhenWhere';
 import { PlayButton } from './components/PlayButton';
 
@@ -13,13 +12,14 @@ const { Footer } = Layout;
 function App() {
   return (
     <main style={{ height: '100%' }}>
+      <PlayButton />
+
       <TitleLayout config={Configs} />
       <Greeting config={Configs} />
       <WhenWhere />
       <Gallery config={Configs} />
       {/* <Location config={Configs} /> */}
       <CongratulatoryMoney config={Configs} />
-      <Music />
       {/* <Share config={Configs} /> */}
       <Footer
         style={{
@@ -32,7 +32,6 @@ function App() {
       >
         Cao Cường & Minh Phương
       </Footer>
-      <PlayButton />
     </main>
   );
 }

@@ -39,7 +39,7 @@ export const WhenWhere = () => {
       </h2>
       <Item>
         <h3>Tiệc cưới nhà gái</h3>
-        <p>9h00 ngày 26 tháng 12 năm 2023</p>
+        <p>9h00 ngày 07 tháng 01 năm 2024</p>
         <div>
           Tại Tư gia nhà gái: Khu phố Yên Nho, Phường Gia Đông, Thị xã Thuận Thành, Tỉnh Bắc Ninh
         </div>
@@ -47,7 +47,7 @@ export const WhenWhere = () => {
       </Item>
       <Item>
         <h3>Tiệc cưới nhà trai</h3>
-        <p>9h00 ngày 26 tháng 12 năm 2023</p>
+        <p>9h00 ngày 07 tháng 01 năm 2024</p>
         <div>
           Tư gia nhà trai: Số 33, Ngõ Đo, Thôn Tư Can, Xã Châu Can, Huyện Phú Xuyên, Thành phố Hà
           Nội
