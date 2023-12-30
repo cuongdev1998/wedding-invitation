@@ -31,7 +31,7 @@ const Greeting = ({ config }: GreetingProps) => {
     <div
       
     >
-      <Layout>
+      {/* <Layout> */}
         {/* <Title>Trân trọng kính mời bạn đến dự lễ thành hôn của hai chúng tôi</Title> */}
         {/* <SubTitle> */}
           <div
@@ -66,7 +66,7 @@ const Greeting = ({ config }: GreetingProps) => {
             
           </Card>
         {/* </SubTitle> */}
-      </Layout>
+      {/* </Layout> */}
     </div>
   );
 };

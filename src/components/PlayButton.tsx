@@ -21,7 +21,7 @@ export const PlayButton = () => {
   };
   return (
     <>
-      <audio style={{ visibility: 'hidden' }} ref={audioRef} controls autoPlay>
+      <audio style={{ visibility: 'hidden', position: 'fixed' }} ref={audioRef} controls autoPlay>
         <source src={music} />
       </audio>
       <div

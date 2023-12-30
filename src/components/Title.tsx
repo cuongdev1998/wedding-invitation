@@ -5,17 +5,16 @@ import { HeartConfetti } from './HeartConfetti';
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
 const Section = styled('section', {
-  height: '100%',
+  // height: '100%',
   background: '#DADADA',
-  overflow: 'hidden',
-  position: 'relative',
 });
 
 const Layout = styled('div', {
   width: '100%',
   color: '#5D4037',
   textAlign: 'center',
-  marginTop: '3.5%',
+  // marginTop: '3.5%',
+  padding: '3% 0',
   animation: 'fadein 2.5s',
 
 });
@@ -28,19 +27,11 @@ const TitleLayout = styled('p', {
   fontFamily: 'Alex Brush',
 });
 
-const SubTitleLayout = styled('p', {
-  width: '100%',
-  fontSize: isPortrait ? '1.2em' : '2em',
-  margin: '24px 0',
-  fontWeight: '300',
-});
 
 const ImageLayout = styled('div', {
   width: '100%',
   background: '#DADADA',
-  bottom: '-5px',
   textAlign: 'center',
-  position: 'absolute',
 });
 
 const Image = styled('img', {
@@ -68,15 +59,10 @@ const Title = ({ config }: TitleProps) => {
       <HeartConfetti />
       <Section>
         <Layout>
-          <SubTitleLayout>WEDDING INVITATION</SubTitleLayout>
+          <h3>WEDDING INVITATION</h3>
           <TitleLayout>
             {config.groom.name} &amp; {config.bride.name}
           </TitleLayout>
-          <SubTitleLayout>
-            {config.weddingDate}
-            <br />
-            {config.weddingLocation}
-          </SubTitleLayout>
         </Layout>
         <ImageLayout>
           <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />

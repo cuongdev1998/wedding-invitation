@@ -1,4 +1,3 @@
-import LocationMapImage from './resources/LocationMap.png';
 import GalleryPhoto1 from './resources/MP_CC_1.jpg';
 import GalleryPhoto2 from './resources/MP_CC_2.jpg';
 import GalleryPhoto3 from './resources/MP_CC_3.jpg';
@@ -13,10 +12,7 @@ import QR_bride from './resources/qr_bride.jpg';
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
-  kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
-  kakaoImage: '카카오톡으로 공유할 때 사용되는 대표이미지 URL을 입력해주세요!',
   weddingDate: '07/01/2023',
-  weddingLocation: '○○○웨딩, ○층 ○○홀',
   groom: {
     name: 'Cao Cường',
     accountNumber: '○○은행 ***-***-******',
@@ -26,7 +22,6 @@ const Configs: ConfigsType = {
     accountNumber: '○○은행 ***-***-******',
   },
   titleImage: "https://i.pinimg.com/originals/f3/6e/b5/f36eb572eedd8594e58289bfadfaba7c.jpg",
-  locationMapImage: LocationMapImage,
   galleryImages: [
     GalleryPhoto1,
     GalleryPhoto2,
@@ -45,14 +40,10 @@ const Configs: ConfigsType = {
 
 export type ConfigsType = {
   url: string;
-  kakaoToken: string;
-  kakaoImage: string;
   weddingDate: string;
-  weddingLocation: string;
   groom: Person;
   bride: Person;
   titleImage: string;
-  locationMapImage: string;
   galleryImages: string[];
   qrCodeGroomImage: string;
   qrCodeBrideImage: string;
