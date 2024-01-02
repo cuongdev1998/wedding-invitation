@@ -29,7 +29,7 @@ export const PlayButton = () => {
           borderRadius: '50%',
           backgroundColor: '#ffffff',
           position: 'fixed',
-          top: '50%',
+          top: '82%',
           right: '1rem',
           width: '40px',
           height: '40px',

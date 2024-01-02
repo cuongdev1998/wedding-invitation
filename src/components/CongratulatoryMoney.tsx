@@ -29,7 +29,7 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
           borderRadius: '50%',
           backgroundColor: '#ffffff',
           position: 'fixed',
-          top: '58%',
+          top: '90%',
           right: '1rem',
           width: '40px',
           height: '40px',
