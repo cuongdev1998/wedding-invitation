@@ -14,7 +14,6 @@ export const Wish = () => {
     const fetchData = async () => {
       try {
         const snapshot = await dataRef.ref('/user').once('value');
-        console.log(snapshot.val());
         const firebaseData = snapshot.val();
         if (firebaseData) {
           const dataArray: Item[] = Object.keys(firebaseData).map((key) => ({
