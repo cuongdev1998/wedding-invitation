@@ -7,6 +7,7 @@ import { Layout } from 'antd';
 import { WhenWhere } from './components/WhenWhere';
 import { PlayButton } from './components/PlayButton';
 import { Contact } from './components/Contact';
+import { Wish } from './components/Wish';
 // Import the functions you need from the SDKs you ne
 const { Footer } = Layout;
 
@@ -34,6 +35,7 @@ function App() {
       {/* <Location config={Configs} /> */}
       <CongratulatoryMoney config={Configs} />
       <Contact />
+      <Wish />
       <Footer
         style={{
           background: '#D7CCC8',

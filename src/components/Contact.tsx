@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { dataRef } from '../firebase';
 import { Radio, RadioChangeEvent } from 'antd';
+import TextArea from 'antd/lib/input/TextArea';
 
 export const Contact = () => {
   const [name, setName] = useState('');
   const [friendOf, setFriendOf] = useState('bride');
+  const [content, setContent] = useState('')
   console.log(name);
 
   const send = (value: boolean) => {
@@ -15,11 +17,12 @@ export const Contact = () => {
           name: name,
           answer: value,
           friend: friendOf,
+          content: content
         })
         .then(() => {
           setName('');
-
-          alert('Cảm ơn bạn đã cho mình xin thông tin!');
+            setContent('')
+          alert('Thank you so much!');
         })
         .catch((err) => console.log(err));
     } else {
@@ -33,6 +36,7 @@ export const Contact = () => {
 
   return (
     <div
+    className='contact'
       style={{
         backgroundColor: '#DADADA',
         padding: '2rem 1rem',
@@ -41,8 +45,8 @@ export const Contact = () => {
         alignItems: 'center',
       }}
     >
-      <p style={{ fontSize: '1.5rem', textAlign: 'center', color: 'rgb(93, 64, 55)' }}>
-        Đến chung vui cùng bọn mình nhé!
+      <p style={{ fontFamily: 'Alex Brush', fontSize: '1.8rem', textAlign: 'center', color: 'rgb(93, 64, 55)' }}>
+        Join With Us!
       </p>
       <div>
         <label style={{ fontSize: '1.1rem' }} htmlFor="inp">
@@ -77,7 +81,12 @@ export const Contact = () => {
           <Radio value={'groom'}>Bạn Chú Rể</Radio>
         </Radio.Group>
       </div>
-      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+      
+      <div className='content' style={{width: '100%', marginTop: '1rem'}}>
+        <p>Rất vui nhận được lời chúc của bạn!</p>
+        <TextArea value={content} onChange={(e) => setContent(e.target.value)} style={{width: '100%'}}/>
+      </div>
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', marginTop: '1rem' }}>
         <button onClick={() => send(true)} className="contact-btn">
           Mình sẽ đến
         </button>

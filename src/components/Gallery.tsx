@@ -41,7 +41,7 @@ const Gallery = ({ config }: GalleryProps) => {
           // </Col>
         ))}
       </Carousel>
-      <Image width='100%' src={dateImage} />
+      <Image width='100%' src={dateImage} preview={false} />
     </section>
   );
 };
