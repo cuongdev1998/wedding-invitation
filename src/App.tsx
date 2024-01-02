@@ -7,10 +7,22 @@ import { Layout } from 'antd';
 import { WhenWhere } from './components/WhenWhere';
 import { PlayButton } from './components/PlayButton';
 import { Contact } from './components/Contact';
-
+// Import the functions you need from the SDKs you ne
 const { Footer } = Layout;
 
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+
+
+
 function App() {
+  // Initialize Firebase
+// const analytics = getAnalytics(app);
   return (
     <main style={{ height: '100%' }}>
       <PlayButton />
