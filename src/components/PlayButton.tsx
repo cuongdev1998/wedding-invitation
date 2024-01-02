@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import music from '../resources/i-do.mp3';
 import sound from '../resources/volume.png';
 import mute from '../resources/mute.png';
