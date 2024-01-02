@@ -7,6 +7,7 @@ import GalleryPhoto6 from './resources/MP_CC_6.jpg';
 import GalleryPhoto7 from './resources/MP_CC_7.jpg';
 import GalleryPhoto8 from './resources/MP_CC_8.jpg';
 import GalleryPhoto9 from './resources/MP_CC_9.jpg';
+import GalleryPhoto10 from './resources/MP_CC_10.jpg';
 import QR_groom from './resources/qr_groom.png';
 import QR_bride from './resources/qr_bride.jpg';
 import QR_code from './resources/qr-code.png';
@@ -32,6 +33,7 @@ const Configs: ConfigsType = {
     GalleryPhoto7,
     GalleryPhoto8,
     GalleryPhoto9,
+    GalleryPhoto10
   ],
   qrCodeGroomImage: QR_groom,
   qrCodeBrideImage: QR_bride,
