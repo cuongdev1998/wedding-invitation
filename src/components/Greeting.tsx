@@ -39,12 +39,12 @@ const Greeting = ({ config }: GreetingProps) => {
             
           </div>
           <Card className="groom-house card">
-            <Image className='avatar' src={Groom} />
+            <Image className='avatar' src={Groom} preview={false} />
             <p style={{ fontFamily: 'Alex Brush', fontSize: '1.5rem' }}>Chú rể</p>
             
           </Card>
           <Card className="bride-house card">
-            <Image className='avatar' src={Bride} />
+            <Image className='avatar' src={Bride} preview={false}/>
             <p style={{ fontFamily: 'Alex Brush', fontSize: '1.5rem' }}>Cô dâu</p>
             
           </Card>

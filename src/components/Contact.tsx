@@ -8,19 +8,23 @@ export const Contact = () => {
   console.log(name);
 
   const send = (value: boolean) => {
-    dataRef
-      .ref('user')
-      .push({
-        name: name,
-        answer: value,
-        friend: friendOf
-      })
-      .then(() => {
-        setName('');
+    if (name) {
+      dataRef
+        .ref('user')
+        .push({
+          name: name,
+          answer: value,
+          friend: friendOf,
+        })
+        .then(() => {
+          setName('');
 
-        alert('Cảm ơn bạn đã cho mình xin thông tin!');
-      })
-      .catch((err) => console.log(err));
+          alert('Cảm ơn bạn đã cho mình xin thông tin!');
+        })
+        .catch((err) => console.log(err));
+    } else {
+      alert('Hihi bạn thiếu tên rùi nè!');
+    }
   };
 
   const onChange = (e: RadioChangeEvent) => {
@@ -58,10 +62,19 @@ export const Contact = () => {
           value={name}
         />
       </div>
-      <div style={{ marginBottom: '20px',  padding: '0 5rem', width: '100%', display: 'flex', alignItems: 'center',justifyContent: 'space-around' }} >
-      <Radio.Group onChange={onChange} value={friendOf}>
-        <Radio value={'bride'}>Bạn Cô Dâu</Radio>
-        <Radio value={'groom'}>Bạn Chú Rể</Radio>
+      <div
+        style={{
+          marginBottom: '20px',
+          padding: '0 5rem',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-around',
+        }}
+      >
+        <Radio.Group onChange={onChange} value={friendOf}>
+          <Radio value={'bride'}>Bạn Cô Dâu</Radio>
+          <Radio value={'groom'}>Bạn Chú Rể</Radio>
         </Radio.Group>
       </div>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
@@ -69,7 +82,7 @@ export const Contact = () => {
           Mình sẽ đến
         </button>
         <button onClick={() => send(false)} className="contact-btn">
-          Tiếc quá! Mình bận mất rồi!{' '}
+          Tiếc quá, mình ăn cỗ online zậy nha!{' '}
         </button>
       </div>
     </div>

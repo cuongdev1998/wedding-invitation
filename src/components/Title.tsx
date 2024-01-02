@@ -1,6 +1,7 @@
 import { styled } from '@stitches/react';
 import { ConfigsType } from '../configs';
 import { HeartConfetti } from './HeartConfetti';
+import { Image } from 'antd';
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
@@ -34,9 +35,6 @@ const ImageLayout = styled('div', {
   textAlign: 'center',
 });
 
-const Image = styled('img', {
-  width: isPortrait ? '100%' : '40%',
-});
 
 type TitleProps = {
   config: ConfigsType;
@@ -65,7 +63,7 @@ const Title = ({ config }: TitleProps) => {
           </TitleLayout>
         </Layout>
         <ImageLayout>
-          <Image src={config.titleImage} alt="Wedding Invitation Title Picutre" />
+          <Image src={config.titleImage} preview={false} />
         </ImageLayout>
       </Section>
     </>

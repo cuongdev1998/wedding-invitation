@@ -10,19 +10,18 @@ import GalleryPhoto9 from './resources/MP_CC_9.jpg';
 import QR_groom from './resources/qr_groom.png';
 import QR_bride from './resources/qr_bride.jpg';
 import QR_code from './resources/qr-code.png';
+import title from './resources/title.jpg';
 
 const Configs: ConfigsType = {
   url: 'http://localhost:3000',
   weddingDate: '07/01/2023',
   groom: {
     name: 'Cao Cường',
-    accountNumber: '○○은행 ***-***-******',
   },
   bride: {
     name: 'Minh Phương',
-    accountNumber: '○○은행 ***-***-******',
   },
-  titleImage: "https://i.pinimg.com/originals/f3/6e/b5/f36eb572eedd8594e58289bfadfaba7c.jpg",
+  titleImage: title,
   galleryImages: [
     GalleryPhoto1,
     GalleryPhoto2,
@@ -54,7 +53,7 @@ export type ConfigsType = {
 
 type Person = {
   name: string;
-  accountNumber: string;
+  accountNumber?: string;
   fatherName?: string;
   fatherAccountNumber?: string;
   motherName?: string;
