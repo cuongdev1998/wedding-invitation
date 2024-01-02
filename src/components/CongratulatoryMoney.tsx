@@ -1,8 +1,7 @@
 import { styled } from '@stitches/react';
-import { Divider, Modal } from 'antd';
+import { Modal } from 'antd';
 import { useState } from 'react';
 import { ConfigsType } from '../configs';
-import lixi from '../resources/hongbao.png';
 
 
 const Section = styled('section', {
