@@ -2,6 +2,7 @@ import { styled } from '@stitches/react';
 import { Carousel, Image } from 'antd';
 
 import { ConfigsType } from '../configs';
+import dateImage from '../resources/date.jpg'
 
 const isPortrait = window.matchMedia('(orientation: portrait)').matches;
 
@@ -40,6 +41,7 @@ const Gallery = ({ config }: GalleryProps) => {
           // </Col>
         ))}
       </Carousel>
+      <Image width='100%' src={dateImage} />
     </section>
   );
 };

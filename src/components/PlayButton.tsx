@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import music from '../resources/i-do.mp3';
 import sound from '../resources/volume.png';
 import mute from '../resources/mute.png';
 
 export const PlayButton = () => {
-  const [isMute, setIsMute] = useState<boolean>(false);
+  const [isMute, setIsMute] = useState<boolean>(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const onPlay = () => {
@@ -38,7 +38,9 @@ export const PlayButton = () => {
           alignItems: 'center',
           justifyContent: 'center',
           cursor: 'pointer',
+
         }}
+        className='btn'
         onClick={onPlay}
       >
         <img src={isMute ? mute : sound} alt="" style={{ width: '25px' }} />

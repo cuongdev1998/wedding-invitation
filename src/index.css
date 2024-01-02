@@ -52,3 +52,17 @@ body,
     opacity: 1;
   }
 }
+
+.contact-btn {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.contact-btn:hover {
+  transform: scale(1.2);
+}

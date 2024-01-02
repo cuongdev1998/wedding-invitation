@@ -25,10 +25,6 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
 
   return (
     <Section>
-      {/* <Layout>
-        <Title>축하의 마음을 전하세요</Title>
-        <SubTitle>축하의 마음을 담아 축의금을 전달해 보세요.</SubTitle>
-      </Layout> */}
       <div
         style={{
           borderRadius: '50%',
@@ -57,17 +53,21 @@ const CongratulatoryMoney = ({ config }: CongratulatoryMoneyProps) => {
         cancelButtonProps={{ style: { display: 'none' } }}
         okButtonProps={{ style: { display: 'none' } }}
       >
-        <div style={{textAlign: 'center'}}>
-          <Image src={config.qrCodeGroomImage} alt="Wedding Invitation Title Picutre" />
-          <Image src={config.qrCodeBrideImage} alt="Wedding Invitation Title Picutre" />
-          <b>{config.groom.fatherName}</b>
-          <Divider type="vertical" />
+      <p style={{textAlign: 'center', fontSize: '1.2rem', fontFamily: 'Alex Brush'}}>Thật tiếc nếu bạn không đến chung vui được với bọn mình</p>
+
+        <div style={{textAlign: 'center', display: 'flex', justifyContent: 'space-around',alignItems: 'flex-start'}}>
+          <div style={{textAlign: 'center', fontSize: '1.1rem', fontFamily: 'Alex Brush'}}>
+            <p>Chúc mừng Cô dâu</p>
+            <Image style={{width: '150px'}} src={config.qrCodeBrideImage} alt="Wedding Invitation Title Picutre" />
+          </div>
+          <div style={{textAlign: 'center', fontSize: '1.1rem', fontFamily: 'Alex Brush'}}>
+            <p>Chúc mừng Chú rể</p>
+            <Image style={{width: '150px'}} src={config.qrCodeGroomImage} alt="Wedding Invitation Title Picutre" />
+
+          </div>
           
         </div>
-        <div style={{textAlign: 'center'}} className='lucky-money'>
-          <Image src={lixi} alt="Wedding Invitation Title Picutre" />
-
-        </div>
+        
         
       </Modal>
     </Section>

@@ -6,6 +6,7 @@ import Configs from './configs';
 import { Layout } from 'antd';
 import { WhenWhere } from './components/WhenWhere';
 import { PlayButton } from './components/PlayButton';
+import { Contact } from './components/Contact';
 
 const { Footer } = Layout;
 
@@ -20,7 +21,7 @@ function App() {
       <Gallery config={Configs} />
       {/* <Location config={Configs} /> */}
       <CongratulatoryMoney config={Configs} />
-      {/* <Share config={Configs} /> */}
+      <Contact />
       <Footer
         style={{
           background: '#D7CCC8',

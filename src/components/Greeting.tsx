@@ -36,18 +36,7 @@ const Greeting = ({ config }: GreetingProps) => {
               color: 'rgb(93, 64, 55);',
             }}
           >
-            <h2>
-              {config.groom.name}{' '}
-              <span
-                style={{
-                  color: '#800000',
-                }}
-                className="love"
-              >
-                &#10084;
-              </span>{' '}
-              {config.bride.name}{' '}
-            </h2>
+            
           </div>
           <Card className="groom-house card">
             <Image className='avatar' src={Groom} />
